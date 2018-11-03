@@ -16,5 +16,21 @@
     
     <?php wp_head(); ?>
 </head>
+
 <body>
     <?php if ( function_exists( 'gtm4wp_the_gtm_tag' ) ) { gtm4wp_the_gtm_tag(); } ?>
+
+    <?php if (is_front_page()) { ?>
+        
+        <header class="header-home">
+            <h1>alexSHARKE</h1>
+            <h2>welcome.</h2>
+        </header>
+
+    <?php } else {  ?>
+        
+        <header class="single_page--header">
+        
+        </header>
+
+    <?php } ?>
