@@ -23,14 +23,17 @@
     <?php if (is_front_page()) { ?>
         
         <header class="header-home">
-            <h1>alexSHARKE</h1>
-            <h2>welcome.</h2>
+            <div class="overlay"></div>
+            <div class="logos">
+                <img class="alex-logo" src="<?php echo bloginfo('template_url');?>/inc/imgs/alex-logo.png" alt="Alex Sharke">
+                <img class="sharke-logo" src="<?php echo bloginfo('template_url');?>/inc/imgs/shark-logo.png" alt="Shark Fin in water">
+            </div>
         </header>
 
     <?php } else {  ?>
         
         <header class="single_page--header">
-        
+            <h1>HI MATTY</h1>
         </header>
 
     <?php } ?>
